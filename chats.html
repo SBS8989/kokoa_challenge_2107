@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="kr">
+  <head>
+    <link rel="stylesheet" href="css/styles.css" />
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Chats - Kokoa Talk</title>
+  </head>
+  <body>
+    <div class="status-bar">
+      <div class="status-bar_colum">
+        <span>No Service</span>
+        <i class="fas fa-wifi"></i>
+      </div>
+      <div class="status-bar_colum">
+        <span>18:43</span>
+      </div>
+      <div class="status-bar_colum">
+        <span>110%</span>
+        <i class="fas fa-battery-full fa-lg"></i>
+        <i class="fas fa-bolt"></i>
+      </div>
+    </div>
+
+    <header class="screen-header">
+      <h1 class="screen-header_title">Chats</h1>
+      <div class="screen-header_icons">
+        <span>
+          <a class="screen-header_search" href="#"
+            ><i class="fas fa-search fa-lg"></i
+          ></a>
+        </span>
+        <span><i class="far fa-comment-dots fa-lg"></i></span>
+        <span><i class="fas fa-music fa-lg"></i></span>
+        <span><i class="fas fa-cog fa-lg"></i></span>
+      </div>
+    </header>
+
+
+    <main class="main-screen">
+      <a href="chat.html">
+        <div class="user-component">
+          <div class="user-component_column">
+          <img
+            src="https://avatars.githubusercontent.com/u/83171891?s=400&u=0a70576ecc430268f17669737907e3b2561ad7c0&v=4"
+            class="user-component_avatar user-component_avatar"
+          />
+
+          <div class="user-component_text">
+            <h4 class="user-component_title">Brian</h4>
+            <h5 class="user-component_subtitle">Please check my Kakao Account info</h5>
+          </div>
+          </div>
+          <div class="user-component__column">
+            <span class="user-component_time">21:22</span>
+            <div class="badge">1</div>
+          </div>
+        </div>
+      </a>
+    </main>
+
+    <nav class="nav">
+      <ul class="nav_list">
+        <li class="nav_btn">
+          <a class="nav_link" href="Friends.html"
+            ><i class="far fa-user fa-2x"></i></a>
+        </li>
+        <li class="nav_btn">
+          <a class="nav_link" href="chats.html">
+            <span class="nav_notification badge">1</span>
+            <i class="fas fa-comment fa-2x"></i></a>
+        </li>
+        <li class="nav_btn">
+          <a class="nav_link" href="Find.html"><i class="fas fa-search fa-2x"></i></a>
+        </li>
+        <li class="nav_btn">
+          <a class="nav_link" href="More.html">
+            <span class="nav_dot">.</span><i class="fas fa-ellipsis-h fa-2x"></i
+          ></a>
+        </li>
+      </ul>
+    </nav>
+
+
+    <div id="no-mobile">
+      <span>Your Screen is TOO BIG T.T
+      </span>
+    </div>
+
+    <script
+      src="https://kit.fontawesome.com/fc1a2772d5.js"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>
+
+<!-- - navigation 안의 ul 안에 많은 li들로 구성되는데, 검색엔진 구글도 navigation을 찾아서 ul의 li 안에 있는 link를 가져오게끔 설정되어 있다.
+- VSC의 단축키로 navigation에서 하위메뉴까지 한번에 자동 완성 시킬 수 있다.
+→ nav>il>li*(필요한 갯수)>a
+→ 그 후 #과 tab만으로 간편하게 작성이 가능하다.(수정하다보면 다음 tab이 옳게 먹히지 않는다.)
+- 점 3개는 ellipsis라고 한다.
+- 속성과 class 이름이 똑같아도 상관없다.
+- 메인 styles.css에 다른 요소의 css를 import 할 때, 순서를 지키는 것이 정말 중요하다.-->
+      </div>
+    </div>
+  </body>
+</html>
