@@ -116,7 +116,7 @@
   padding: 5px 30px;
   align-items: center;
   position: relative;
-  margin-top: 20px;
+  margin-top: 50px;
   transform: all 0.3s ease-in-out;
 }
 
@@ -130,7 +130,7 @@
   border: var(--main-border);
   border-radius: 20px;
   padding: 2px;
-  transition: transform 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
 }
 
 .reply_column:first-child i {
@@ -169,6 +169,11 @@
   border-radius: 50%;
 }
 
+.reply_column button:focus,
+.reply_column button:active {
+  outline: none;
+}
+
 .reply .reply_column:first-child,
 .reply .fa-smile,
 .reply button {
@@ -179,13 +184,15 @@
 .reply:focus-within .fa-smile,
 .reply:focus-within button {
   opacity: 0;
+  visibility: hidden;
 }
 
-.reply input:focus {
-  width: 96vw;
-  transform: translateX(-6.5%) translateY(-80px);
+.reply:focus-within input {
+  width: 88vw;
+  transform: translateX(-4%);
 }
 
-.reply:focus-within {
-  transform: translateY(80px);
+.reply:focus-within .reply_column:first-child {
+  opacity: 0;
+  visibility: hidden;
 }
